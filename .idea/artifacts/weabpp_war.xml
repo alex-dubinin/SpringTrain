@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="weabpp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="weabpp.war">
+      <element id="artifact" artifact-name="weabpp:war exploded" />
+    </root>
+  </artifact>
+</component>
