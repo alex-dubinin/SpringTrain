@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @org.springframework.stereotype.Controller
 public class Controller {
-    @RequestMapping(value = "/test.form",method = RequestMethod.GET)
+    @RequestMapping(value = "/test.form", method = RequestMethod.GET)
+    public String test(@RequestParam("name") String param, Model model) {
+        model.addAttribute("name", param);
+        return "hello";}
 
-    public String test(@RequestParam("name") String param, Model model){
-        model.addAttribute("name",param);
-        return "hello";
-    }
-
+    @RequestMapping(value = "/test2.form", method = RequestMethod.GET)
+    public String test2(String param, Model model) {
+        model.addAttribute("name", param);
+        return "index";}
 }

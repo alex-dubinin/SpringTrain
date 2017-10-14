@@ -5,7 +5,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/springСonfig.xml</param-value>
+        <param-value>/WEB-INF/springConfig.xml</param-value>
     </context-param>
     <listener><listener-class>org.springframework.web.context.ContextLoaderListener</listener-class></listener>
     <servlet>
@@ -21,7 +21,7 @@
         <url-pattern>*.form</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
-        <welcome-file>/WEB-INF/pages/index.jsp</welcome-file>
+        <welcome-file>/WEB-INF/index.jsp</welcome-file>
     </welcome-file-list>
 
 </web-app>
